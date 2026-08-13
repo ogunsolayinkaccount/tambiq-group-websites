@@ -1,0 +1,73 @@
+{
+  "divisions": [
+    {
+      "slug": "construction",
+      "name": "TambiQ Construction",
+      "shortName": "Construction",
+      "status": "development",
+      "tagline": "Construction, project delivery, and project controls.",
+      "description": "Construction, project delivery, project controls, scheduling, development support, and related construction services.",
+      "route": "/companies/construction/"
+    },
+    {
+      "slug": "properties",
+      "name": "TambiQ Properties",
+      "shortName": "Properties",
+      "status": "development",
+      "tagline": "Real estate acquisition, development, and investment.",
+      "description": "Real estate acquisition, development, investment analysis, property technology, and property opportunities.",
+      "route": "/companies/properties/"
+    },
+    {
+      "slug": "auto",
+      "name": "TambiQ Auto",
+      "shortName": "Auto",
+      "status": "planning",
+      "tagline": "Automotive sales and dealership operations.",
+      "description": "Automotive sales, dealership operations, vehicle sourcing, and future mobility-related services.",
+      "route": "/companies/auto/"
+    },
+    {
+      "slug": "logistics",
+      "name": "TambiQ Logistics",
+      "shortName": "Logistics",
+      "status": "planning",
+      "tagline": "Transportation, delivery, and supply-chain services.",
+      "description": "Transportation, logistics coordination, commercial delivery, and supply-chain services.",
+      "route": "/companies/logistics/"
+    },
+    {
+      "slug": "recreation",
+      "name": "TambiQ Recreation",
+      "shortName": "Recreation",
+      "status": "development",
+      "tagline": "Indoor sports and community recreation.",
+      "description": "Indoor sports, recreation centers, community-focused entertainment, food, and leisure concepts.",
+      "route": "/companies/recreation/"
+    },
+    {
+      "slug": "fashion",
+      "name": "TambiQ Fashion",
+      "shortName": "Fashion",
+      "status": "planning",
+      "tagline": "Apparel, lifestyle, and retail concepts.",
+      "description": "Fashion, apparel, lifestyle products, sourcing, and retail concepts.",
+      "route": "/companies/fashion/"
+    },
+    {
+      "slug": "marketplace",
+      "name": "TambiQ Marketplace",
+      "shortName": "Marketplace",
+      "status": "planning",
+      "tagline": "Digital commerce and consumer marketplace.",
+      "description": "Digital commerce, products, services, and future TambiQ consumer marketplace initiatives.",
+      "route": "/companies/marketplace/"
+    }
+  ],
+  "statusLabels": {
+    "operating": "Operating",
+    "development": "In Development",
+    "planning": "Planning",
+    "coming-soon": "Coming Soon"
+  }
+}

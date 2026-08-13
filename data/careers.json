@@ -1,0 +1,13 @@
+{
+  "_comment": "No real job openings exist yet. Keep this array empty until actual listings are provided — do not fabricate roles. Each entry should follow the shape below once real data exists.",
+  "_schema": {
+    "slug": "string",
+    "title": "string",
+    "division": "one of: group | construction | properties | auto | logistics | recreation | fashion | marketplace",
+    "location": "string",
+    "type": "one of: full-time | part-time | contract | internship",
+    "description": "string",
+    "applyHref": "mailto: or URL"
+  },
+  "jobs": []
+}

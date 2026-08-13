@@ -1,0 +1,16 @@
+{
+  "_comment": "No real projects exist yet. Keep this array empty until actual project data is provided — do not fabricate names, locations, or investment values. Each entry should follow the shape below once real data exists.",
+  "_schema": {
+    "slug": "string",
+    "name": "string",
+    "division": "one of: construction | properties | auto | logistics | recreation | fashion | marketplace",
+    "location": "string",
+    "status": "one of: operating | development | planning | coming-soon",
+    "description": "string",
+    "investmentType": "string",
+    "image": "path or url",
+    "timeline": "string",
+    "cta": { "label": "string", "href": "string" }
+  },
+  "projects": []
+}

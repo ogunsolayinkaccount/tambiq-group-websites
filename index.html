@@ -3,9 +3,17 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>TambiQ Group LLC — A Diversified Holding Company</title>
-<meta name="description" content="TambiQ Group LLC is a privately held holding company building and operating category-leading businesses across construction, logistics, retail, and more.">
+<title>TambiQ Group LLC — Building Businesses. Creating Value. Investing in Communities.</title>
+<meta name="description" content="TambiQ Group LLC is a diversified holding company developing businesses across construction, real estate, automotive, logistics, recreation, fashion, and commerce.">
 <link rel="canonical" href="https://www.tambiq.com/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="TambiQ Group LLC">
+<meta property="og:title" content="TambiQ Group LLC — Building Businesses. Creating Value. Investing in Communities.">
+<meta property="og:description" content="A diversified holding company developing businesses across construction, real estate, automotive, logistics, recreation, fashion, and commerce.">
+<meta property="og:url" content="https://www.tambiq.com/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="TambiQ Group LLC">
+<meta name="twitter:description" content="Building Businesses. Creating Value. Investing in Communities.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
@@ -38,6 +46,18 @@
       linear-gradient(90deg, rgba(255,255,255,0.045) 1px, transparent 1px);
     background-size: 44px 44px;
   }
+  .flow-line {
+    background-image: linear-gradient(90deg, currentColor 50%, transparent 50%);
+    background-size: 10px 2px;
+    background-repeat: repeat-x;
+    background-position: 0 center;
+  }
+  .flow-line-v {
+    background-image: linear-gradient(180deg, currentColor 50%, transparent 50%);
+    background-size: 2px 10px;
+    background-repeat: repeat-y;
+    background-position: center 0;
+  }
 </style>
 </head>
 <body class="font-sans antialiased bg-white text-ink dark:bg-ink dark:text-gray-100 transition-colors">
@@ -46,7 +66,7 @@
   <header id="site-header" class="fixed top-0 inset-x-0 z-50 transition-all duration-300 bg-white/80 dark:bg-ink/80 backdrop-blur-md border-b border-black/5 dark:border-white/10">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-16 sm:h-20">
-        <a href="#top" class="flex items-center gap-2.5 shrink-0">
+        <a href="./" class="flex items-center gap-2.5 shrink-0">
           <svg class="h-9 w-9 sm:h-10 sm:w-10" viewBox="0 0 40 40" role="img" aria-label="TambiQ Group emblem">
             <rect width="40" height="40" rx="9" fill="#0a0e1a"/>
             <rect x="1" y="1" width="38" height="38" rx="8" fill="none" stroke="#c9973a" stroke-width="1"/>
@@ -58,14 +78,55 @@
           </span>
         </a>
 
-        <nav class="hidden lg:flex items-center gap-8 text-sm font-medium text-gray-600 dark:text-gray-300">
-          <a href="#about" class="hover:text-gold-600 dark:hover:text-gold-400 transition-colors">About</a>
-          <a href="#divisions" class="hover:text-gold-600 dark:hover:text-gold-400 transition-colors">Divisions</a>
-          <a href="#leadership" class="hover:text-gold-600 dark:hover:text-gold-400 transition-colors">Leadership</a>
-          <a href="#news" class="hover:text-gold-600 dark:hover:text-gold-400 transition-colors">News</a>
-          <a href="#careers" class="hover:text-gold-600 dark:hover:text-gold-400 transition-colors">Careers</a>
-          <a href="#investors" class="hover:text-gold-600 dark:hover:text-gold-400 transition-colors">Investors</a>
-          <a href="#contact" class="px-4 py-2 rounded-full bg-ink text-white dark:bg-gold-500 dark:text-ink hover:opacity-90 transition-opacity">Contact</a>
+        <nav class="hidden lg:flex items-center gap-7 text-sm font-medium text-gray-600 dark:text-gray-300">
+          <a href="./" class="hover:text-gold-600 dark:hover:text-gold-400 transition-colors">Home</a>
+          <a href="about/" class="hover:text-gold-600 dark:hover:text-gold-400 transition-colors">About</a>
+
+          <div class="relative group">
+            <button type="button" class="flex items-center gap-1 hover:text-gold-600 dark:hover:text-gold-400 transition-colors">
+              Our Companies
+              <svg class="h-3.5 w-3.5 mt-px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="invisible opacity-0 translate-y-1 group-hover:visible group-hover:opacity-100 group-hover:translate-y-0 group-focus-within:visible group-focus-within:opacity-100 group-focus-within:translate-y-0 transition-all duration-150 absolute left-1/2 -translate-x-1/2 top-full pt-3 w-[640px] max-w-[90vw]">
+              <div class="rounded-2xl bg-white dark:bg-ink-800 border border-black/5 dark:border-white/10 shadow-2xl p-5 grid grid-cols-2 gap-1">
+                <a href="companies/construction/" class="flex items-start gap-3 p-3 rounded-xl hover:bg-gray-50 dark:hover:bg-white/5 transition-colors">
+                  <span class="h-9 w-9 shrink-0 rounded-lg bg-gold-500/10 flex items-center justify-center text-gold-600 dark:text-gold-400"><svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V9l7-5 7 5v12M9 21v-6h6v6"/></svg></span>
+                  <span><span class="block text-sm font-semibold">TambiQ Construction</span><span class="block text-xs text-gray-500 dark:text-gray-400">Project delivery &amp; controls</span></span>
+                </a>
+                <a href="companies/properties/" class="flex items-start gap-3 p-3 rounded-xl hover:bg-gray-50 dark:hover:bg-white/5 transition-colors">
+                  <span class="h-9 w-9 shrink-0 rounded-lg bg-gold-500/10 flex items-center justify-center text-gold-600 dark:text-gold-400"><svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-7 9 7M5 10v10h5v-6h4v6h5V10"/></svg></span>
+                  <span><span class="block text-sm font-semibold">TambiQ Properties</span><span class="block text-xs text-gray-500 dark:text-gray-400">Real estate &amp; investment</span></span>
+                </a>
+                <a href="companies/auto/" class="flex items-start gap-3 p-3 rounded-xl hover:bg-gray-50 dark:hover:bg-white/5 transition-colors">
+                  <span class="h-9 w-9 shrink-0 rounded-lg bg-gold-500/10 flex items-center justify-center text-gold-600 dark:text-gold-400"><svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 11l1.5-5h11L19 11M5 11h14M5 11v7h14v-7"/><circle cx="8.5" cy="18" r="1.6"/><circle cx="15.5" cy="18" r="1.6"/></svg></span>
+                  <span><span class="block text-sm font-semibold">TambiQ Auto</span><span class="block text-xs text-gray-500 dark:text-gray-400">Automotive &amp; dealership</span></span>
+                </a>
+                <a href="companies/logistics/" class="flex items-start gap-3 p-3 rounded-xl hover:bg-gray-50 dark:hover:bg-white/5 transition-colors">
+                  <span class="h-9 w-9 shrink-0 rounded-lg bg-gold-500/10 flex items-center justify-center text-gold-600 dark:text-gold-400"><svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17h9V6H3v11zM12 10h5l4 4v3h-9v-7z"/><circle cx="7" cy="19" r="1.6"/><circle cx="17" cy="19" r="1.6"/></svg></span>
+                  <span><span class="block text-sm font-semibold">TambiQ Logistics</span><span class="block text-xs text-gray-500 dark:text-gray-400">Transportation &amp; supply chain</span></span>
+                </a>
+                <a href="companies/recreation/" class="flex items-start gap-3 p-3 rounded-xl hover:bg-gray-50 dark:hover:bg-white/5 transition-colors">
+                  <span class="h-9 w-9 shrink-0 rounded-lg bg-gold-500/10 flex items-center justify-center text-gold-600 dark:text-gold-400"><svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 6.5a3 3 0 013-3H8v6h-.5a3 3 0 01-3-3zM17.5 6.5a3 3 0 00-3-3H16v6h.5a3 3 0 003-3zM8 6.5h8M12 9.5v5m0 0c-2 0-3.5 1-3.5 3h7c0-2-1.5-3-3.5-3z"/></svg></span>
+                  <span><span class="block text-sm font-semibold">TambiQ Recreation</span><span class="block text-xs text-gray-500 dark:text-gray-400">Sports &amp; community leisure</span></span>
+                </a>
+                <a href="companies/fashion/" class="flex items-start gap-3 p-3 rounded-xl hover:bg-gray-50 dark:hover:bg-white/5 transition-colors">
+                  <span class="h-9 w-9 shrink-0 rounded-lg bg-gold-500/10 flex items-center justify-center text-gold-600 dark:text-gold-400"><svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4a3 3 0 006 0M5 7l4-3h6l4 3-3 3v11H8V10L5 7z"/></svg></span>
+                  <span><span class="block text-sm font-semibold">TambiQ Fashion</span><span class="block text-xs text-gray-500 dark:text-gray-400">Apparel &amp; lifestyle</span></span>
+                </a>
+                <a href="companies/marketplace/" class="col-span-2 flex items-start gap-3 p-3 rounded-xl hover:bg-gray-50 dark:hover:bg-white/5 transition-colors">
+                  <span class="h-9 w-9 shrink-0 rounded-lg bg-gold-500/10 flex items-center justify-center text-gold-600 dark:text-gold-400"><svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8l1.5-4h13L20 8M4 8h16M4 8l1 12h14l1-12M9 12a3 3 0 006 0"/></svg></span>
+                  <span><span class="block text-sm font-semibold">TambiQ Marketplace</span><span class="block text-xs text-gray-500 dark:text-gray-400">Digital commerce</span></span>
+                </a>
+              </div>
+              <div class="mt-1 rounded-2xl bg-gray-50 dark:bg-ink-700/40 border border-black/5 dark:border-white/10 px-5 py-3">
+                <a href="companies/" class="text-sm font-semibold text-gold-600 dark:text-gold-400 hover:underline">View All Companies →</a>
+              </div>
+            </div>
+          </div>
+
+          <a href="projects/" class="hover:text-gold-600 dark:hover:text-gold-400 transition-colors">Projects &amp; Investments</a>
+          <a href="careers/" class="hover:text-gold-600 dark:hover:text-gold-400 transition-colors">Careers</a>
+          <a href="contact/" class="px-4 py-2 rounded-full bg-ink text-white dark:bg-gold-500 dark:text-ink hover:opacity-90 transition-opacity">Contact</a>
         </nav>
 
         <div class="flex items-center gap-1.5">
@@ -82,16 +143,32 @@
     </div>
 
     <!-- Mobile menu -->
-    <div id="mobile-menu" class="hidden lg:hidden border-t border-black/5 dark:border-white/10 bg-white dark:bg-ink">
+    <div id="mobile-menu" class="hidden lg:hidden border-t border-black/5 dark:border-white/10 bg-white dark:bg-ink max-h-[calc(100vh-4rem)] overflow-y-auto">
       <nav class="max-w-7xl mx-auto px-4 py-3 flex flex-col text-gray-700 dark:text-gray-200 divide-y divide-black/5 dark:divide-white/10">
-        <a href="#about" class="py-3 hover:text-gold-600 dark:hover:text-gold-400">About</a>
-        <a href="#divisions" class="py-3 hover:text-gold-600 dark:hover:text-gold-400">Divisions</a>
-        <a href="#leadership" class="py-3 hover:text-gold-600 dark:hover:text-gold-400">Leadership</a>
-        <a href="#news" class="py-3 hover:text-gold-600 dark:hover:text-gold-400">News</a>
-        <a href="#careers" class="py-3 hover:text-gold-600 dark:hover:text-gold-400">Careers</a>
-        <a href="#investors" class="py-3 hover:text-gold-600 dark:hover:text-gold-400">Investors</a>
-        <a href="#sustainability" class="py-3 hover:text-gold-600 dark:hover:text-gold-400">Sustainability</a>
-        <a href="#contact" class="py-3 hover:text-gold-600 dark:hover:text-gold-400">Contact</a>
+        <a href="./" class="py-3 hover:text-gold-600 dark:hover:text-gold-400">Home</a>
+        <a href="about/" class="py-3 hover:text-gold-600 dark:hover:text-gold-400">About</a>
+
+        <details class="py-3">
+          <summary class="cursor-pointer list-none flex items-center justify-between hover:text-gold-600 dark:hover:text-gold-400">
+            Our Companies
+            <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+          </summary>
+          <div class="mt-2 pl-3 flex flex-col gap-2 text-sm text-gray-600 dark:text-gray-300">
+            <a href="companies/" class="py-1.5 font-semibold text-gold-600 dark:text-gold-400">View All Companies</a>
+            <a href="companies/construction/" class="py-1.5">TambiQ Construction</a>
+            <a href="companies/properties/" class="py-1.5">TambiQ Properties</a>
+            <a href="companies/auto/" class="py-1.5">TambiQ Auto</a>
+            <a href="companies/logistics/" class="py-1.5">TambiQ Logistics</a>
+            <a href="companies/recreation/" class="py-1.5">TambiQ Recreation</a>
+            <a href="companies/fashion/" class="py-1.5">TambiQ Fashion</a>
+            <a href="companies/marketplace/" class="py-1.5">TambiQ Marketplace</a>
+          </div>
+        </details>
+
+        <a href="projects/" class="py-3 hover:text-gold-600 dark:hover:text-gold-400">Projects &amp; Investments</a>
+        <a href="news/" class="py-3 hover:text-gold-600 dark:hover:text-gold-400">News &amp; Insights</a>
+        <a href="careers/" class="py-3 hover:text-gold-600 dark:hover:text-gold-400">Careers</a>
+        <a href="contact/" class="py-3 hover:text-gold-600 dark:hover:text-gold-400">Contact</a>
       </nav>
     </div>
   </header>
@@ -104,15 +181,15 @@
       <div class="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <p class="reveal inline-block text-xs sm:text-sm font-semibold tracking-[0.25em] uppercase text-gold-400 mb-5">A Diversified Holding Company</p>
         <h1 class="reveal font-serif font-bold text-4xl sm:text-6xl leading-[1.1] mb-6">
-          Building Enduring<br class="hidden sm:block"> Businesses Across Industries
+          Building Businesses.<br class="hidden sm:block"> Creating Value. Investing in Communities.
         </h1>
         <p class="reveal text-base sm:text-lg text-gray-300 max-w-2xl mx-auto mb-10">
-          TambiQ Group LLC invests in, builds, and operates independently run companies —
-          each held to the same standard of craftsmanship, integrity, and long-term thinking.
+          TambiQ Group LLC is a diversified company focused on developing businesses, assets, and
+          opportunities across construction, real estate, automotive, logistics, recreation, and commerce.
         </p>
         <div class="reveal flex flex-col sm:flex-row items-center justify-center gap-4">
-          <a href="#divisions" class="w-full sm:w-auto px-7 py-3.5 rounded-full bg-gold-500 text-ink font-semibold hover:bg-gold-400 transition-colors">Explore Our Companies</a>
-          <a href="#investors" class="w-full sm:w-auto px-7 py-3.5 rounded-full border border-white/25 text-white font-semibold hover:bg-white/10 transition-colors">Investor Relations</a>
+          <a href="companies/" class="w-full sm:w-auto px-7 py-3.5 rounded-full bg-gold-500 text-ink font-semibold hover:bg-gold-400 transition-colors">Explore Our Companies</a>
+          <a href="about/" class="w-full sm:w-auto px-7 py-3.5 rounded-full border border-white/25 text-white font-semibold hover:bg-white/10 transition-colors">About TambiQ Group</a>
         </div>
       </div>
     </section>
@@ -135,204 +212,273 @@
       </div>
     </section>
 
-    <!-- About / Vision / Mission -->
-    <section id="about" class="py-20 sm:py-28">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-14 items-start">
-        <div class="reveal">
-          <p class="text-xs font-semibold tracking-[0.25em] uppercase text-gold-600 dark:text-gold-400 mb-4">About TambiQ Group</p>
-          <h2 class="font-serif text-3xl sm:text-4xl font-bold mb-6">A Home for Businesses Built to Last</h2>
-          <p class="text-gray-600 dark:text-gray-300 leading-relaxed mb-4">
-            TambiQ Group LLC is the parent holding company behind a growing family of independently
-            operated businesses. Rather than a single product or industry, TambiQ is organized around
-            a single discipline: acquiring and building companies with durable advantages, then giving
-            their operators the resources and autonomy to run them well.
-          </p>
-          <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
-            Each division carries its own brand, its own leadership, and its own P&amp;L — united under
-            TambiQ's shared standards for operational excellence and long-term stewardship.
-          </p>
-        </div>
-        <div class="reveal grid sm:grid-cols-2 gap-5">
-          <div class="rounded-2xl p-6 bg-gray-50 dark:bg-ink-800 dark:bg-ink-700/40 border border-black/5 dark:border-white/10">
-            <h3 class="font-serif font-bold text-lg mb-2">Vision</h3>
-            <p class="text-sm text-gray-600 dark:text-gray-300 leading-relaxed">To be the trusted home for enduring, category-leading businesses across every industry we enter.</p>
-          </div>
-          <div class="rounded-2xl p-6 bg-gray-50 dark:bg-ink-800 dark:bg-ink-700/40 border border-black/5 dark:border-white/10">
-            <h3 class="font-serif font-bold text-lg mb-2">Mission</h3>
-            <p class="text-sm text-gray-600 dark:text-gray-300 leading-relaxed">To build and acquire well-run companies, invest in their people, and compound their value over decades, not quarters.</p>
-          </div>
-          <div class="rounded-2xl p-6 bg-gray-50 dark:bg-ink-800 dark:bg-ink-700/40 border border-black/5 dark:border-white/10 sm:col-span-2">
-            <h3 class="font-serif font-bold text-lg mb-3">Core Values</h3>
-            <div class="grid grid-cols-2 gap-3 text-sm text-gray-600 dark:text-gray-300">
-              <div class="flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full bg-gold-500"></span>Integrity</div>
-              <div class="flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full bg-gold-500"></span>Excellence</div>
-              <div class="flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full bg-gold-500"></span>Long-Term Thinking</div>
-              <div class="flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full bg-gold-500"></span>Stewardship</div>
-              <div class="flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full bg-gold-500"></span>Innovation</div>
-              <div class="flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full bg-gold-500"></span>Community</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Business Divisions -->
-    <section id="divisions" class="py-20 sm:py-28 bg-gray-50 dark:bg-ink-800">
+    <!-- Our Companies -->
+    <section id="companies" class="py-20 sm:py-28 bg-gray-50 dark:bg-ink-800">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="reveal text-center max-w-2xl mx-auto mb-14">
           <p class="text-xs font-semibold tracking-[0.25em] uppercase text-gold-600 dark:text-gold-400 mb-4">Our Portfolio</p>
-          <h2 class="font-serif text-3xl sm:text-4xl font-bold mb-4">Business Divisions</h2>
+          <h2 class="font-serif text-3xl sm:text-4xl font-bold mb-4">Our Companies</h2>
           <p class="text-gray-600 dark:text-gray-300">Seven independently operated companies, one shared standard of excellence.</p>
         </div>
 
         <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
 
-          <div class="reveal group rounded-2xl bg-white dark:bg-ink border border-black/5 dark:border-white/10 p-7 hover:shadow-xl hover:-translate-y-1 transition-all">
-            <div class="h-12 w-12 rounded-xl bg-gold-500/10 flex items-center justify-center text-gold-600 dark:text-gold-400 mb-5">
-              <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V9l7-5 7 5v12M9 21v-6h6v6"/></svg>
+          <a href="companies/construction/" class="reveal group rounded-2xl bg-white dark:bg-ink border border-black/5 dark:border-white/10 p-7 hover:shadow-xl hover:-translate-y-1 transition-all flex flex-col">
+            <div class="flex items-start justify-between mb-5">
+              <div class="h-12 w-12 rounded-xl bg-gold-500/10 flex items-center justify-center text-gold-600 dark:text-gold-400">
+                <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V9l7-5 7 5v12M9 21v-6h6v6"/></svg>
+              </div>
+              <span class="inline-flex items-center text-[11px] font-semibold uppercase tracking-wider px-2.5 py-1 rounded-full bg-gold-500/10 text-gold-600 dark:text-gold-400">In Development</span>
             </div>
             <h3 class="font-serif font-bold text-lg mb-1.5">TambiQ Construction</h3>
-            <p class="text-sm text-gray-600 dark:text-gray-300 mb-4">Commercial and residential general contracting, design-build, and construction management.</p>
-            <span class="inline-block text-xs font-semibold px-3 py-1 rounded-full bg-gray-100 dark:bg-white/10 text-gray-500 dark:text-gray-400">Coming Soon</span>
-          </div>
+            <p class="text-sm text-gray-600 dark:text-gray-300 mb-5 flex-1">Construction, project delivery, project controls, scheduling, and development support.</p>
+            <span class="inline-flex items-center gap-1.5 text-sm font-semibold text-gold-600 dark:text-gold-400">Explore <svg class="h-4 w-4 transition-transform group-hover:translate-x-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </a>
 
-          <div class="reveal group rounded-2xl bg-white dark:bg-ink border border-black/5 dark:border-white/10 p-7 hover:shadow-xl hover:-translate-y-1 transition-all">
-            <div class="h-12 w-12 rounded-xl bg-gold-500/10 flex items-center justify-center text-gold-600 dark:text-gold-400 mb-5">
-              <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17h9V6H3v11zM12 10h5l4 4v3h-9v-7z"/><circle cx="7" cy="19" r="1.6"/><circle cx="17" cy="19" r="1.6"/></svg>
-            </div>
-            <h3 class="font-serif font-bold text-lg mb-1.5">TambiQ Logistics</h3>
-            <p class="text-sm text-gray-600 dark:text-gray-300 mb-4">Freight, trucking, transportation, warehousing, and supply-chain management.</p>
-            <span class="inline-block text-xs font-semibold px-3 py-1 rounded-full bg-gray-100 dark:bg-white/10 text-gray-500 dark:text-gray-400">Coming Soon</span>
-          </div>
-
-          <div class="reveal group rounded-2xl bg-white dark:bg-ink border border-black/5 dark:border-white/10 p-7 hover:shadow-xl hover:-translate-y-1 transition-all">
-            <div class="h-12 w-12 rounded-xl bg-gold-500/10 flex items-center justify-center text-gold-600 dark:text-gold-400 mb-5">
-              <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 11l1.5-5h11L19 11M5 11h14M5 11v7h14v-7"/><circle cx="8.5" cy="18" r="1.6"/><circle cx="15.5" cy="18" r="1.6"/></svg>
-            </div>
-            <h3 class="font-serif font-bold text-lg mb-1.5">TambiQ Dealership</h3>
-            <p class="text-sm text-gray-600 dark:text-gray-300 mb-4">New and used automobile sales, financing, trade-ins, and service department.</p>
-            <span class="inline-block text-xs font-semibold px-3 py-1 rounded-full bg-gray-100 dark:bg-white/10 text-gray-500 dark:text-gray-400">Coming Soon</span>
-          </div>
-
-          <div class="reveal group rounded-2xl bg-white dark:bg-ink border border-black/5 dark:border-white/10 p-7 hover:shadow-xl hover:-translate-y-1 transition-all">
-            <div class="h-12 w-12 rounded-xl bg-gold-500/10 flex items-center justify-center text-gold-600 dark:text-gold-400 mb-5">
-              <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4a3 3 0 006 0M5 7l4-3h6l4 3-3 3v11H8V10L5 7z"/></svg>
-            </div>
-            <h3 class="font-serif font-bold text-lg mb-1.5">TambiQ Fashion</h3>
-            <p class="text-sm text-gray-600 dark:text-gray-300 mb-4">A luxury apparel and accessories brand spanning menswear, womenswear, and footwear.</p>
-            <span class="inline-block text-xs font-semibold px-3 py-1 rounded-full bg-gray-100 dark:bg-white/10 text-gray-500 dark:text-gray-400">Coming Soon</span>
-          </div>
-
-          <div class="reveal group rounded-2xl bg-white dark:bg-ink border border-black/5 dark:border-white/10 p-7 hover:shadow-xl hover:-translate-y-1 transition-all">
-            <div class="h-12 w-12 rounded-xl bg-gold-500/10 flex items-center justify-center text-gold-600 dark:text-gold-400 mb-5">
-              <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8l1.5-4h13L20 8M4 8h16M4 8l1 12h14l1-12M9 12a3 3 0 006 0"/></svg>
-            </div>
-            <h3 class="font-serif font-bold text-lg mb-1.5">TambiQ Marketplace</h3>
-            <p class="text-sm text-gray-600 dark:text-gray-300 mb-4">A multi-vendor online marketplace connecting independent sellers with customers.</p>
-            <span class="inline-block text-xs font-semibold px-3 py-1 rounded-full bg-gray-100 dark:bg-white/10 text-gray-500 dark:text-gray-400">Coming Soon</span>
-          </div>
-
-          <div class="reveal group rounded-2xl bg-white dark:bg-ink border border-black/5 dark:border-white/10 p-7 hover:shadow-xl hover:-translate-y-1 transition-all">
-            <div class="h-12 w-12 rounded-xl bg-gold-500/10 flex items-center justify-center text-gold-600 dark:text-gold-400 mb-5">
-              <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 6.5a3 3 0 013-3H8v6h-.5a3 3 0 01-3-3zM17.5 6.5a3 3 0 00-3-3H16v6h.5a3 3 0 003-3zM8 6.5h8M12 9.5v5m0 0c-2 0-3.5 1-3.5 3h7c0-2-1.5-3-3.5-3z"/></svg>
-            </div>
-            <h3 class="font-serif font-bold text-lg mb-1.5">TambiQ Recreational Center</h3>
-            <p class="text-sm text-gray-600 dark:text-gray-300 mb-4">Sports and recreation management, including gym, swimming, classes, and event booking.</p>
-            <span class="inline-block text-xs font-semibold px-3 py-1 rounded-full bg-gray-100 dark:bg-white/10 text-gray-500 dark:text-gray-400">Coming Soon</span>
-          </div>
-
-          <div class="reveal group rounded-2xl bg-white dark:bg-ink border border-black/5 dark:border-white/10 p-7 hover:shadow-xl hover:-translate-y-1 transition-all">
-            <div class="h-12 w-12 rounded-xl bg-gold-500/10 flex items-center justify-center text-gold-600 dark:text-gold-400 mb-5">
-              <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-7 9 7M5 10v10h5v-6h4v6h5V10"/></svg>
+          <a href="companies/properties/" class="reveal group rounded-2xl bg-white dark:bg-ink border border-black/5 dark:border-white/10 p-7 hover:shadow-xl hover:-translate-y-1 transition-all flex flex-col">
+            <div class="flex items-start justify-between mb-5">
+              <div class="h-12 w-12 rounded-xl bg-gold-500/10 flex items-center justify-center text-gold-600 dark:text-gold-400">
+                <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-7 9 7M5 10v10h5v-6h4v6h5V10"/></svg>
+              </div>
+              <span class="inline-flex items-center text-[11px] font-semibold uppercase tracking-wider px-2.5 py-1 rounded-full bg-gold-500/10 text-gold-600 dark:text-gold-400">In Development</span>
             </div>
             <h3 class="font-serif font-bold text-lg mb-1.5">TambiQ Properties</h3>
-            <p class="text-sm text-gray-600 dark:text-gray-300 mb-4">Residential and commercial property development, acquisition, and management.</p>
-            <span class="inline-block text-xs font-semibold px-3 py-1 rounded-full bg-gray-100 dark:bg-white/10 text-gray-500 dark:text-gray-400">Coming Soon</span>
+            <p class="text-sm text-gray-600 dark:text-gray-300 mb-5 flex-1">Real estate acquisition, development, investment analysis, and property opportunities.</p>
+            <span class="inline-flex items-center gap-1.5 text-sm font-semibold text-gold-600 dark:text-gold-400">Explore <svg class="h-4 w-4 transition-transform group-hover:translate-x-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </a>
+
+          <a href="companies/auto/" class="reveal group rounded-2xl bg-white dark:bg-ink border border-black/5 dark:border-white/10 p-7 hover:shadow-xl hover:-translate-y-1 transition-all flex flex-col">
+            <div class="flex items-start justify-between mb-5">
+              <div class="h-12 w-12 rounded-xl bg-gold-500/10 flex items-center justify-center text-gold-600 dark:text-gold-400">
+                <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 11l1.5-5h11L19 11M5 11h14M5 11v7h14v-7"/><circle cx="8.5" cy="18" r="1.6"/><circle cx="15.5" cy="18" r="1.6"/></svg>
+              </div>
+              <span class="inline-flex items-center text-[11px] font-semibold uppercase tracking-wider px-2.5 py-1 rounded-full bg-gray-100 dark:bg-white/10 text-gray-500 dark:text-gray-400">Planning</span>
+            </div>
+            <h3 class="font-serif font-bold text-lg mb-1.5">TambiQ Auto</h3>
+            <p class="text-sm text-gray-600 dark:text-gray-300 mb-5 flex-1">Automotive sales, dealership operations, vehicle sourcing, and future mobility services.</p>
+            <span class="inline-flex items-center gap-1.5 text-sm font-semibold text-gold-600 dark:text-gold-400">Explore <svg class="h-4 w-4 transition-transform group-hover:translate-x-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </a>
+
+          <a href="companies/logistics/" class="reveal group rounded-2xl bg-white dark:bg-ink border border-black/5 dark:border-white/10 p-7 hover:shadow-xl hover:-translate-y-1 transition-all flex flex-col">
+            <div class="flex items-start justify-between mb-5">
+              <div class="h-12 w-12 rounded-xl bg-gold-500/10 flex items-center justify-center text-gold-600 dark:text-gold-400">
+                <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17h9V6H3v11zM12 10h5l4 4v3h-9v-7z"/><circle cx="7" cy="19" r="1.6"/><circle cx="17" cy="19" r="1.6"/></svg>
+              </div>
+              <span class="inline-flex items-center text-[11px] font-semibold uppercase tracking-wider px-2.5 py-1 rounded-full bg-gray-100 dark:bg-white/10 text-gray-500 dark:text-gray-400">Planning</span>
+            </div>
+            <h3 class="font-serif font-bold text-lg mb-1.5">TambiQ Logistics</h3>
+            <p class="text-sm text-gray-600 dark:text-gray-300 mb-5 flex-1">Transportation, logistics coordination, commercial delivery, and supply-chain services.</p>
+            <span class="inline-flex items-center gap-1.5 text-sm font-semibold text-gold-600 dark:text-gold-400">Explore <svg class="h-4 w-4 transition-transform group-hover:translate-x-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </a>
+
+          <a href="companies/recreation/" class="reveal group rounded-2xl bg-white dark:bg-ink border border-black/5 dark:border-white/10 p-7 hover:shadow-xl hover:-translate-y-1 transition-all flex flex-col">
+            <div class="flex items-start justify-between mb-5">
+              <div class="h-12 w-12 rounded-xl bg-gold-500/10 flex items-center justify-center text-gold-600 dark:text-gold-400">
+                <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 6.5a3 3 0 013-3H8v6h-.5a3 3 0 01-3-3zM17.5 6.5a3 3 0 00-3-3H16v6h.5a3 3 0 003-3zM8 6.5h8M12 9.5v5m0 0c-2 0-3.5 1-3.5 3h7c0-2-1.5-3-3.5-3z"/></svg>
+              </div>
+              <span class="inline-flex items-center text-[11px] font-semibold uppercase tracking-wider px-2.5 py-1 rounded-full bg-gold-500/10 text-gold-600 dark:text-gold-400">In Development</span>
+            </div>
+            <h3 class="font-serif font-bold text-lg mb-1.5">TambiQ Recreation</h3>
+            <p class="text-sm text-gray-600 dark:text-gray-300 mb-5 flex-1">Indoor sports, recreation centers, community-focused entertainment, and leisure concepts.</p>
+            <span class="inline-flex items-center gap-1.5 text-sm font-semibold text-gold-600 dark:text-gold-400">Explore <svg class="h-4 w-4 transition-transform group-hover:translate-x-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </a>
+
+          <a href="companies/fashion/" class="reveal group rounded-2xl bg-white dark:bg-ink border border-black/5 dark:border-white/10 p-7 hover:shadow-xl hover:-translate-y-1 transition-all flex flex-col">
+            <div class="flex items-start justify-between mb-5">
+              <div class="h-12 w-12 rounded-xl bg-gold-500/10 flex items-center justify-center text-gold-600 dark:text-gold-400">
+                <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4a3 3 0 006 0M5 7l4-3h6l4 3-3 3v11H8V10L5 7z"/></svg>
+              </div>
+              <span class="inline-flex items-center text-[11px] font-semibold uppercase tracking-wider px-2.5 py-1 rounded-full bg-gray-100 dark:bg-white/10 text-gray-500 dark:text-gray-400">Planning</span>
+            </div>
+            <h3 class="font-serif font-bold text-lg mb-1.5">TambiQ Fashion</h3>
+            <p class="text-sm text-gray-600 dark:text-gray-300 mb-5 flex-1">Fashion, apparel, lifestyle products, sourcing, and retail concepts.</p>
+            <span class="inline-flex items-center gap-1.5 text-sm font-semibold text-gold-600 dark:text-gold-400">Explore <svg class="h-4 w-4 transition-transform group-hover:translate-x-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </a>
+
+          <a href="companies/marketplace/" class="reveal group rounded-2xl bg-white dark:bg-ink border border-black/5 dark:border-white/10 p-7 hover:shadow-xl hover:-translate-y-1 transition-all flex flex-col sm:col-span-2 lg:col-span-1">
+            <div class="flex items-start justify-between mb-5">
+              <div class="h-12 w-12 rounded-xl bg-gold-500/10 flex items-center justify-center text-gold-600 dark:text-gold-400">
+                <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8l1.5-4h13L20 8M4 8h16M4 8l1 12h14l1-12M9 12a3 3 0 006 0"/></svg>
+              </div>
+              <span class="inline-flex items-center text-[11px] font-semibold uppercase tracking-wider px-2.5 py-1 rounded-full bg-gray-100 dark:bg-white/10 text-gray-500 dark:text-gray-400">Planning</span>
+            </div>
+            <h3 class="font-serif font-bold text-lg mb-1.5">TambiQ Marketplace</h3>
+            <p class="text-sm text-gray-600 dark:text-gray-300 mb-5 flex-1">Digital commerce, products, services, and future TambiQ consumer marketplace initiatives.</p>
+            <span class="inline-flex items-center gap-1.5 text-sm font-semibold text-gold-600 dark:text-gold-400">Explore <svg class="h-4 w-4 transition-transform group-hover:translate-x-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Current Ventures -->
+    <section id="ventures" class="py-20 sm:py-28">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="reveal text-center max-w-2xl mx-auto mb-14">
+          <p class="text-xs font-semibold tracking-[0.25em] uppercase text-gold-600 dark:text-gold-400 mb-4">Where We Stand</p>
+          <h2 class="font-serif text-3xl sm:text-4xl font-bold mb-4">Current Ventures</h2>
+          <p class="text-gray-600 dark:text-gray-300">Not every division is fully operational yet. We believe in representing each venture honestly, at the stage it's actually at.</p>
+        </div>
+        <div class="reveal grid sm:grid-cols-3 gap-5">
+          <div class="rounded-2xl p-6 border border-black/5 dark:border-white/10 bg-gray-50 dark:bg-ink-700/40">
+            <span class="inline-flex items-center text-[11px] font-semibold uppercase tracking-wider px-2.5 py-1 rounded-full bg-green-500/10 text-green-600 dark:text-green-400 mb-3">Operating</span>
+            <p class="text-sm text-gray-600 dark:text-gray-300">Actively running with real operations, customers, or services in market.</p>
           </div>
-
+          <div class="rounded-2xl p-6 border border-black/5 dark:border-white/10 bg-gray-50 dark:bg-ink-700/40">
+            <span class="inline-flex items-center text-[11px] font-semibold uppercase tracking-wider px-2.5 py-1 rounded-full bg-gold-500/10 text-gold-600 dark:text-gold-400 mb-3">In Development</span>
+            <p class="text-sm text-gray-600 dark:text-gray-300">Active build-out underway — TambiQ Construction, TambiQ Properties, and TambiQ Recreation.</p>
+          </div>
+          <div class="rounded-2xl p-6 border border-black/5 dark:border-white/10 bg-gray-50 dark:bg-ink-700/40">
+            <span class="inline-flex items-center text-[11px] font-semibold uppercase tracking-wider px-2.5 py-1 rounded-full bg-gray-100 dark:bg-white/10 text-gray-500 dark:text-gray-400 mb-3">Planning</span>
+            <p class="text-sm text-gray-600 dark:text-gray-300">Early-stage concept and strategy work — TambiQ Auto, TambiQ Logistics, TambiQ Fashion, and TambiQ Marketplace.</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Leadership -->
-    <section id="leadership" class="py-20 sm:py-28">
-      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <p class="reveal text-xs font-semibold tracking-[0.25em] uppercase text-gold-600 dark:text-gold-400 mb-4">Leadership</p>
-        <h2 class="reveal font-serif text-3xl sm:text-4xl font-bold mb-6">Guided by Experienced Operators</h2>
-        <p class="reveal text-gray-600 dark:text-gray-300 leading-relaxed mb-8">
-          TambiQ Group is led by a team with cross-industry experience spanning construction, logistics,
-          retail, and finance. Full leadership profiles will be published here as the team grows.
-        </p>
-        <a href="#contact" class="reveal inline-block px-6 py-3 rounded-full border border-black/10 dark:border-white/20 font-semibold hover:bg-gray-50 dark:hover:bg-white/5 transition-colors">Get in Touch with Leadership</a>
+    <!-- TambiQ Ecosystem -->
+    <section id="ecosystem" class="py-20 sm:py-28 bg-ink text-white relative overflow-hidden">
+      <div class="absolute inset-0 bg-grid opacity-40"></div>
+      <div class="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="reveal text-center max-w-2xl mx-auto mb-16">
+          <p class="text-xs font-semibold tracking-[0.25em] uppercase text-gold-400 mb-4">How It Fits Together</p>
+          <h2 class="font-serif text-3xl sm:text-4xl font-bold mb-4">The TambiQ Ecosystem</h2>
+          <p class="text-gray-300">Our divisions are designed to reinforce one another — value created in one stage can flow into the next.</p>
+        </div>
+
+        <!-- Desktop flow: horizontal -->
+        <div class="reveal hidden md:flex items-stretch justify-center gap-0">
+          <div class="flex flex-col items-center w-40">
+            <div class="h-16 w-16 rounded-2xl bg-white/5 border border-white/15 flex items-center justify-center text-gold-400 mb-3"><svg class="h-7 w-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-5.2-7-11a7 7 0 0114 0c0 5.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></div>
+            <p class="text-sm font-semibold text-center">Property Acquisition</p>
+          </div>
+          <div class="flex-1 flex items-center min-w-[2.5rem]"><div class="flow-line w-full h-0.5 text-gold-500/50"></div></div>
+          <div class="flex flex-col items-center w-40">
+            <div class="h-16 w-16 rounded-2xl bg-white/5 border border-white/15 flex items-center justify-center text-gold-400 mb-3"><svg class="h-7 w-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-7 9 7M5 10v10h5v-6h4v6h5V10"/></svg></div>
+            <p class="text-sm font-semibold text-center">TambiQ Properties</p>
+          </div>
+          <div class="flex-1 flex items-center min-w-[2.5rem]"><div class="flow-line w-full h-0.5 text-gold-500/50"></div></div>
+          <div class="flex flex-col items-center w-40">
+            <div class="h-16 w-16 rounded-2xl bg-white/5 border border-white/15 flex items-center justify-center text-gold-400 mb-3"><svg class="h-7 w-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V9l7-5 7 5v12M9 21v-6h6v6"/></svg></div>
+            <p class="text-sm font-semibold text-center">TambiQ Construction</p>
+          </div>
+          <div class="flex-1 flex items-center min-w-[2.5rem]"><div class="flow-line w-full h-0.5 text-gold-500/50"></div></div>
+          <div class="flex flex-col items-center w-40">
+            <div class="h-16 w-16 rounded-2xl bg-white/5 border border-white/15 flex items-center justify-center text-gold-400 mb-3"><svg class="h-7 w-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9.5L12 3l9 6.5M5 10v10h14V10M9 20v-6h6v6"/></svg></div>
+            <p class="text-sm font-semibold text-center">Commercial Development</p>
+          </div>
+          <div class="flex-1 flex items-center min-w-[2.5rem]"><div class="flow-line w-full h-0.5 text-gold-500/50"></div></div>
+          <div class="flex flex-col items-center w-40">
+            <div class="h-16 w-16 rounded-2xl bg-white/5 border border-white/15 flex items-center justify-center text-gold-400 mb-3"><svg class="h-7 w-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 11l1.5-5h11L19 11M5 11h14M5 11v7h14v-7"/><circle cx="8.5" cy="18" r="1.6"/><circle cx="15.5" cy="18" r="1.6"/></svg></div>
+            <p class="text-sm font-semibold text-center">TambiQ Auto / Recreation</p>
+          </div>
+          <div class="flex-1 flex items-center min-w-[2.5rem]"><div class="flow-line w-full h-0.5 text-gold-500/50"></div></div>
+          <div class="flex flex-col items-center w-40">
+            <div class="h-16 w-16 rounded-2xl bg-white/5 border border-white/15 flex items-center justify-center text-gold-400 mb-3"><svg class="h-7 w-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17h9V6H3v11zM12 10h5l4 4v3h-9v-7z"/><circle cx="7" cy="19" r="1.6"/><circle cx="17" cy="19" r="1.6"/></svg></div>
+            <p class="text-sm font-semibold text-center">TambiQ Logistics</p>
+          </div>
+        </div>
+
+        <!-- Mobile flow: vertical -->
+        <div class="reveal md:hidden flex flex-col items-center">
+          <div class="flex flex-col items-center">
+            <div class="h-14 w-14 rounded-2xl bg-white/5 border border-white/15 flex items-center justify-center text-gold-400 mb-2"><svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-5.2-7-11a7 7 0 0114 0c0 5.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></div>
+            <p class="text-sm font-semibold">Property Acquisition</p>
+          </div>
+          <div class="h-8 w-full flex justify-center"><div class="flow-line-v h-full w-0.5 text-gold-500/50"></div></div>
+          <div class="flex flex-col items-center">
+            <div class="h-14 w-14 rounded-2xl bg-white/5 border border-white/15 flex items-center justify-center text-gold-400 mb-2"><svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-7 9 7M5 10v10h5v-6h4v6h5V10"/></svg></div>
+            <p class="text-sm font-semibold">TambiQ Properties</p>
+          </div>
+          <div class="h-8 w-full flex justify-center"><div class="flow-line-v h-full w-0.5 text-gold-500/50"></div></div>
+          <div class="flex flex-col items-center">
+            <div class="h-14 w-14 rounded-2xl bg-white/5 border border-white/15 flex items-center justify-center text-gold-400 mb-2"><svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V9l7-5 7 5v12M9 21v-6h6v6"/></svg></div>
+            <p class="text-sm font-semibold">TambiQ Construction</p>
+          </div>
+          <div class="h-8 w-full flex justify-center"><div class="flow-line-v h-full w-0.5 text-gold-500/50"></div></div>
+          <div class="flex flex-col items-center">
+            <div class="h-14 w-14 rounded-2xl bg-white/5 border border-white/15 flex items-center justify-center text-gold-400 mb-2"><svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9.5L12 3l9 6.5M5 10v10h14V10M9 20v-6h6v6"/></svg></div>
+            <p class="text-sm font-semibold">Commercial Development</p>
+          </div>
+          <div class="h-8 w-full flex justify-center"><div class="flow-line-v h-full w-0.5 text-gold-500/50"></div></div>
+          <div class="flex flex-col items-center">
+            <div class="h-14 w-14 rounded-2xl bg-white/5 border border-white/15 flex items-center justify-center text-gold-400 mb-2"><svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 11l1.5-5h11L19 11M5 11h14M5 11v7h14v-7"/><circle cx="8.5" cy="18" r="1.6"/><circle cx="15.5" cy="18" r="1.6"/></svg></div>
+            <p class="text-sm font-semibold">TambiQ Auto / Recreation</p>
+          </div>
+          <div class="h-8 w-full flex justify-center"><div class="flow-line-v h-full w-0.5 text-gold-500/50"></div></div>
+          <div class="flex flex-col items-center">
+            <div class="h-14 w-14 rounded-2xl bg-white/5 border border-white/15 flex items-center justify-center text-gold-400 mb-2"><svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17h9V6H3v11zM12 10h5l4 4v3h-9v-7z"/><circle cx="7" cy="19" r="1.6"/><circle cx="17" cy="19" r="1.6"/></svg></div>
+            <p class="text-sm font-semibold">TambiQ Logistics</p>
+          </div>
+        </div>
       </div>
     </section>
 
-    <!-- News -->
-    <section id="news" class="py-20 sm:py-28 bg-gray-50 dark:bg-ink-800">
-      <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <p class="reveal text-xs font-semibold tracking-[0.25em] uppercase text-gold-600 dark:text-gold-400 mb-4">News</p>
-        <h2 class="reveal font-serif text-3xl sm:text-4xl font-bold mb-4">Latest Updates</h2>
-        <div class="reveal mt-8 rounded-2xl border border-dashed border-black/15 dark:border-white/15 p-10 text-gray-500 dark:text-gray-400">
-          Company news and announcements will be featured here as TambiQ Group grows.
+    <!-- About teaser -->
+    <section class="py-20 sm:py-28">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-14 items-center">
+        <div class="reveal">
+          <p class="text-xs font-semibold tracking-[0.25em] uppercase text-gold-600 dark:text-gold-400 mb-4">About TambiQ Group</p>
+          <h2 class="font-serif text-3xl sm:text-4xl font-bold mb-6">A Home for Businesses Built to Last</h2>
+          <p class="text-gray-600 dark:text-gray-300 leading-relaxed mb-4">
+            TambiQ Group LLC is building a diversified portfolio of businesses designed to create
+            long-term value through disciplined investment, operational excellence, and
+            community-focused development.
+          </p>
+          <a href="about/" class="inline-flex items-center gap-1.5 text-sm font-semibold text-gold-600 dark:text-gold-400">Learn More About Us <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
         </div>
+        <div class="reveal grid sm:grid-cols-2 gap-5">
+          <div class="rounded-2xl p-6 bg-gray-50 dark:bg-ink-700/40 border border-black/5 dark:border-white/10">
+            <h3 class="font-serif font-bold text-lg mb-2">Vision</h3>
+            <p class="text-sm text-gray-600 dark:text-gray-300 leading-relaxed">To be the trusted home for enduring, category-leading businesses across every industry we enter.</p>
+          </div>
+          <div class="rounded-2xl p-6 bg-gray-50 dark:bg-ink-700/40 border border-black/5 dark:border-white/10">
+            <h3 class="font-serif font-bold text-lg mb-2">Mission</h3>
+            <p class="text-sm text-gray-600 dark:text-gray-300 leading-relaxed">To build and acquire well-run companies, invest in their people, and compound their value over decades, not quarters.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects & News teaser -->
+    <section class="py-20 sm:py-28 bg-gray-50 dark:bg-ink-800">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid sm:grid-cols-2 gap-6">
+        <a href="projects/" class="reveal group rounded-2xl bg-white dark:bg-ink border border-black/5 dark:border-white/10 p-8 hover:shadow-xl transition-all">
+          <p class="text-xs font-semibold tracking-[0.25em] uppercase text-gold-600 dark:text-gold-400 mb-3">Portfolio</p>
+          <h3 class="font-serif text-2xl font-bold mb-3">Projects &amp; Investments</h3>
+          <p class="text-sm text-gray-600 dark:text-gray-300 mb-5">Track our active and upcoming projects across every division as they're published.</p>
+          <span class="inline-flex items-center gap-1.5 text-sm font-semibold text-gold-600 dark:text-gold-400">View Projects <svg class="h-4 w-4 transition-transform group-hover:translate-x-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </a>
+        <a href="news/" class="reveal group rounded-2xl bg-white dark:bg-ink border border-black/5 dark:border-white/10 p-8 hover:shadow-xl transition-all">
+          <p class="text-xs font-semibold tracking-[0.25em] uppercase text-gold-600 dark:text-gold-400 mb-3">Insights</p>
+          <h3 class="font-serif text-2xl font-bold mb-3">News &amp; Insights</h3>
+          <p class="text-sm text-gray-600 dark:text-gray-300 mb-5">Company announcements and updates from across the TambiQ family of companies.</p>
+          <span class="inline-flex items-center gap-1.5 text-sm font-semibold text-gold-600 dark:text-gold-400">Read Updates <svg class="h-4 w-4 transition-transform group-hover:translate-x-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </a>
       </div>
     </section>
 
     <!-- Careers -->
-    <section id="careers" class="py-20 sm:py-28 bg-ink text-white relative overflow-hidden">
+    <section class="py-20 sm:py-28 bg-ink text-white relative overflow-hidden">
       <div class="absolute inset-0 bg-grid opacity-40"></div>
       <div class="relative max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <p class="reveal text-xs font-semibold tracking-[0.25em] uppercase text-gold-400 mb-4">Careers</p>
         <h2 class="reveal font-serif text-3xl sm:text-4xl font-bold mb-4">Join Our Family of Companies</h2>
         <p class="reveal text-gray-300 leading-relaxed mb-8">
-          We're building teams across every TambiQ division. Reach out to learn about current
-          and upcoming opportunities.
+          We're building teams across every TambiQ division. Explore current opportunities or join
+          our future talent network.
         </p>
-        <a href="mailto:careers@tambiq.com" class="reveal inline-block px-7 py-3.5 rounded-full bg-gold-500 text-ink font-semibold hover:bg-gold-400 transition-colors">Contact Us About Careers</a>
+        <a href="careers/" class="reveal inline-block px-7 py-3.5 rounded-full bg-gold-500 text-ink font-semibold hover:bg-gold-400 transition-colors">View Careers</a>
       </div>
     </section>
 
-    <!-- Investors -->
-    <section id="investors" class="py-20 sm:py-28">
-      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 grid sm:grid-cols-2 gap-10 items-center">
-        <div class="reveal">
-          <p class="text-xs font-semibold tracking-[0.25em] uppercase text-gold-600 dark:text-gold-400 mb-4">Investor Relations</p>
-          <h2 class="font-serif text-3xl sm:text-4xl font-bold mb-4">Partnering for the Long Term</h2>
-          <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
-            TambiQ Group LLC is a privately held holding company. For investment, partnership,
-            or acquisition inquiries, please reach out to our team directly.
-          </p>
-        </div>
-        <div class="reveal rounded-2xl bg-gray-50 dark:bg-ink-800 dark:bg-ink-700/40 border border-black/5 dark:border-white/10 p-7">
-          <h3 class="font-serif font-bold text-lg mb-2">Investor Inquiries</h3>
-          <a href="mailto:ir@tambiq.com" class="text-gold-600 dark:text-gold-400 font-medium">ir@tambiq.com</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Sustainability -->
-    <section id="sustainability" class="py-20 sm:py-28 bg-gray-50 dark:bg-ink-800">
-      <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <p class="reveal text-xs font-semibold tracking-[0.25em] uppercase text-gold-600 dark:text-gold-400 mb-4">Sustainability</p>
-        <h2 class="reveal font-serif text-3xl sm:text-4xl font-bold mb-4">Building Responsibly, for the Long Run</h2>
-        <p class="reveal text-gray-600 dark:text-gray-300 leading-relaxed">
-          Long-term thinking means operating responsibly today. Across every division, TambiQ Group
-          is committed to sound governance, responsible resource use, and investing in the communities
-          where our companies operate.
-        </p>
-      </div>
-    </section>
-
-    <!-- Contact -->
+    <!-- Contact teaser -->
     <section id="contact" class="py-20 sm:py-28">
       <div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <p class="reveal text-xs font-semibold tracking-[0.25em] uppercase text-gold-600 dark:text-gold-400 mb-4">Contact</p>
-        <h2 class="reveal font-serif text-3xl sm:text-4xl font-bold mb-8">Get in Touch</h2>
-        <div class="reveal rounded-2xl bg-gray-50 dark:bg-ink-800 dark:bg-ink-700/40 border border-black/5 dark:border-white/10 p-8">
-          <p class="text-gray-600 dark:text-gray-300 mb-4">Reach out to talk about a project, partnership, or opportunity.</p>
-          <p class="font-semibold">Email</p>
-          <a href="mailto:info@tambiq.com" class="text-gold-600 dark:text-gold-400">info@tambiq.com</a>
-        </div>
+        <h2 class="reveal font-serif text-3xl sm:text-4xl font-bold mb-6">Let's Talk</h2>
+        <p class="reveal text-gray-600 dark:text-gray-300 mb-8">Reach out about a project, partnership, investment, or career opportunity.</p>
+        <a href="contact/" class="reveal inline-block px-7 py-3.5 rounded-full bg-ink text-white dark:bg-gold-500 dark:text-ink font-semibold hover:opacity-90 transition-opacity">Contact Us</a>
       </div>
     </section>
   </main>
@@ -349,37 +495,39 @@
           </svg>
           <span class="font-serif font-bold text-white text-lg">TambiQ Group</span>
         </div>
-        <p class="text-sm text-gray-400 leading-relaxed">A diversified holding company building enduring businesses across industries.</p>
+        <p class="text-sm text-gray-400 leading-relaxed">Building Businesses. Creating Value. Investing in Communities.</p>
       </div>
       <div>
-        <h4 class="text-white font-semibold text-sm uppercase tracking-wider mb-4">Divisions</h4>
-        <ul class="space-y-2.5 text-sm text-gray-400">
-          <li>TambiQ Construction</li>
-          <li>TambiQ Logistics</li>
-          <li>TambiQ Dealership</li>
-          <li>TambiQ Fashion</li>
-          <li>TambiQ Marketplace</li>
-          <li>TambiQ Recreational Center</li>
-          <li>TambiQ Properties</li>
+        <h4 class="text-white font-semibold text-sm uppercase tracking-wider mb-4">Companies</h4>
+        <ul class="space-y-2.5 text-sm">
+          <li><a href="companies/construction/" class="hover:text-gold-400 transition-colors">TambiQ Construction</a></li>
+          <li><a href="companies/properties/" class="hover:text-gold-400 transition-colors">TambiQ Properties</a></li>
+          <li><a href="companies/auto/" class="hover:text-gold-400 transition-colors">TambiQ Auto</a></li>
+          <li><a href="companies/logistics/" class="hover:text-gold-400 transition-colors">TambiQ Logistics</a></li>
+          <li><a href="companies/recreation/" class="hover:text-gold-400 transition-colors">TambiQ Recreation</a></li>
+          <li><a href="companies/fashion/" class="hover:text-gold-400 transition-colors">TambiQ Fashion</a></li>
+          <li><a href="companies/marketplace/" class="hover:text-gold-400 transition-colors">TambiQ Marketplace</a></li>
         </ul>
       </div>
       <div>
         <h4 class="text-white font-semibold text-sm uppercase tracking-wider mb-4">Company</h4>
         <ul class="space-y-2.5 text-sm">
-          <li><a href="#about" class="hover:text-gold-400 transition-colors">About</a></li>
-          <li><a href="#leadership" class="hover:text-gold-400 transition-colors">Leadership</a></li>
-          <li><a href="#news" class="hover:text-gold-400 transition-colors">News</a></li>
-          <li><a href="#careers" class="hover:text-gold-400 transition-colors">Careers</a></li>
-          <li><a href="#investors" class="hover:text-gold-400 transition-colors">Investor Relations</a></li>
-          <li><a href="#sustainability" class="hover:text-gold-400 transition-colors">Sustainability</a></li>
+          <li><a href="about/" class="hover:text-gold-400 transition-colors">About</a></li>
+          <li><a href="projects/" class="hover:text-gold-400 transition-colors">Projects &amp; Investments</a></li>
+          <li><a href="news/" class="hover:text-gold-400 transition-colors">News &amp; Insights</a></li>
+          <li><a href="careers/" class="hover:text-gold-400 transition-colors">Careers</a></li>
+          <li><a href="contact/" class="hover:text-gold-400 transition-colors">Contact</a></li>
         </ul>
       </div>
       <div>
         <h4 class="text-white font-semibold text-sm uppercase tracking-wider mb-4">Contact</h4>
-        <ul class="space-y-2.5 text-sm text-gray-400">
+        <ul class="space-y-2.5 text-sm text-gray-400 mb-5">
           <li><a href="mailto:info@tambiq.com" class="hover:text-gold-400 transition-colors">info@tambiq.com</a></li>
-          <li><a href="mailto:careers@tambiq.com" class="hover:text-gold-400 transition-colors">careers@tambiq.com</a></li>
-          <li><a href="mailto:ir@tambiq.com" class="hover:text-gold-400 transition-colors">ir@tambiq.com</a></li>
+        </ul>
+        <h4 class="text-white font-semibold text-sm uppercase tracking-wider mb-3">Legal</h4>
+        <ul class="space-y-2.5 text-sm text-gray-400">
+          <li><a href="privacy/" class="hover:text-gold-400 transition-colors">Privacy Policy</a></li>
+          <li><a href="terms/" class="hover:text-gold-400 transition-colors">Terms of Use</a></li>
         </ul>
       </div>
     </div>
